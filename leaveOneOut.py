@@ -20,10 +20,13 @@ for train_index, test_index in loo.split(features):
     model = LogisticRegression()
     model.fit(features_train, y_train)
     y_pred = model.predict(features_test)
-    if not predictions.any():
+    print(y_pred)
+    if not predictions.any(): # problem here 
         predictions = y_pred
+        print("first iteration")
     else:
         predictions = np.hstack((predictions,y_pred))
+
 
 
 

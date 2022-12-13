@@ -22,3 +22,9 @@ print("Accuracy:", metrics.accuracy_score(y_test, y_pred))
 print("Precision:", metrics.precision_score(y_test, y_pred))
 print("Recall:", metrics.recall_score(y_test, y_pred))
 print("F1:", metrics.f1_score(y_test, y_pred))
+
+model.save_model("./saved-models/xgb_model.json")
+# future work for capstone only
+# write the code for taking new input and getting similar samples
+# decision trees, random forest, nn
+# leave one out, k-fold, without cv
