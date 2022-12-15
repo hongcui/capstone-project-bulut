@@ -10,4 +10,5 @@ plt.bar(['not same', 'same'], list(value_counts.values()), color ='maroon',
 plt.title('Label Distribution in the Created Pairs')
 plt.xlabel('Label')
 plt.ylabel('Number of Pairs')
+plt.show()
 plt.savefig('./figures/label_hist.png')

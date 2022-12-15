@@ -1,0 +1,14 @@
+name: capstone-project
+
+dependencies:
+  - python
+  - numpy
+  - matplotlib
+  - xgboost
+  - pandas
+  - scikit-learn
+  - openpyxl
+  - Levenshtein
+  - shap
+  - pip:
+    - git+https://github.com/blaze/dask.git#egg=dask[complete]
